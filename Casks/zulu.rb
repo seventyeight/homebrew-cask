@@ -1,4 +1,4 @@
-cask "zulu" do
+cask "zuluopenjdk" do
   if Hardware::CPU.intel?
     version "16.0.1,16.30.15-ca"
     sha256 "a9988581a95f00da7768562f19632a71e13b7d695329b074504b8b6883a6dc30"
@@ -30,7 +30,7 @@ cask "zulu" do
   end
 
   name "Azul Zulu Java Standard Edition Development Kit"
-  desc "OpenJDK distribution from Azul"
+  desc "OpenJDK distribution from Azul with native builds for M1 Apple Silicon"
   homepage "https://www.azul.com/downloads/"
 
   depends_on macos: ">= :sierra"
